@@ -1,3 +1,9 @@
+client/node_modules
+client/dist
+.tmp
+.sass-cache
+client/bower_components
+client/test/bower_components
 node_modules
 dist
 .tmp
