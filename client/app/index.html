@@ -11,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/material-design-lite/material.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -29,105 +30,73 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Navigation -->
-    <nav id="main-nav" class="navbar navbar-fixed-top navbar-default">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button id="cd-menu-trigger" type="button" class="navbar-toggle collapsed" aria-expanded="false">
-                    <span class="menu-icon glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                </button>
-                <a title="LOGO" class="navbar-brand color-white" href="/">
-                    <span>LOGO</span>
-                </a>
-            </div>
-        </div><!-- /.container -->
-    </nav>
-
-    <!-- Section 1-->
-    <section class="section hero">
-        <div class="overlay">
-            <div class="container">
-                <h1 class="slogan color-white">Sed ut perspiciatis un?</h1>
-                <h2 class="sub-slogan color-white">- voluptatem accusantium doloremque -</h2>
-                <div class="margin-40">
-                    <a title="more" class="margin-20 cta" href="/">Ver más</a>
-                </div>
-            </div>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Cats or dogs?</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
         </div>
-    </section>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="page-content">
 
-    <!-- Section 2-->
-    <section class="section imgtext bg-white color-gray-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-responsive material-shadow" src="images/bg6.jpg">
+          <!-- Wide card with share menu button -->
+
+          <section class="cards">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--6-col">
+                <div id="dog" class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">DOG</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Que cosica mas mona
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      Perros forever!
+                    </a>
+                  </div>
                 </div>
-                <div class="col-sm-5 col-sm-offset-1">
-                    <div class="text margin-20">
-                        <p class="title">consectetur adipiscing elit</p>
-                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--6-col">
+                <div id="cat" class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">CAT</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Está pa comerselo
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      Gatos hasta la muerte!
+                    </a>
+                  </div>
                 </div>
+              </div>
+
             </div>
+          </section>
+
+
+          <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+          </div>
+
         </div>
-    </section>
-
-    <!-- Section 3-->
-    <section class="section imgtext bg-gray-2 color-gray-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <div class="text margin-20">
-                        <p class="title">consectetur adipiscing elit</p>
-                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-sm-offset-1">
-                    <img class="img-responsive material-shadow" src="images/bg9.jpg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4-->
-    <section class="section features">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="img-responsive material-shadow" src="images/bg5.jpg">
-                    <div class="margin-10">
-                        <p class="desc">minima veniam</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-responsive material-shadow" src="images/bg6.jpg">
-                    <div class="margin-10">
-                        <p class="desc">minima veniam</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-responsive material-shadow" src="images/bg9.jpg">
-                    <div class="margin-10">
-                        <p class="desc">minima veniam</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-1 color-white">
-        <div class="container">
-            Pie
-        </div>
-    </footer>
-
-
+      </main>
+    </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/material-design-lite/material.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
