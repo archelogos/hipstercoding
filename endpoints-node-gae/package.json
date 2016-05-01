@@ -1,0 +1,30 @@
+{
+  "name": "hipstercoding-endp-node",
+  "version": "0.0.1",
+  "description": "Node JS Api running on GAE",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud preview app deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archelogos/hipstercoding.git"
+  },
+  "keywords": [
+    "nodejs",
+    "gae"
+  ],
+  "author": "@Sergio_Gordillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archelogos/hipstercoding/issues"
+  },
+  "homepage": "https://github.com/archelogos/hipstercoding#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "gcloud": "^0.31.0"
+  }
+}

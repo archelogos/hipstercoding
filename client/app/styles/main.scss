@@ -233,3 +233,28 @@ body {
 footer{
     padding: 80px 0;
 }
+
+
+
+/** MATERIAL **/
+
+.demo-card-wide.mdl-card {
+  width: auto;
+  margin: 0 auto;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+}
+#dog.demo-card-wide > .mdl-card__title{
+  background: url('../images/dog.jpg') center / cover;
+}
+#cat.demo-card-wide > .mdl-card__title{
+  background: url('../images/cat.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__supporting-text{
+  font-size: 14px;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
