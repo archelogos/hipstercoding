@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nodemon app.js",
     "deploy": "gcloud preview app deploy"
   },
   "repository": {
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/archelogos/hipstercoding#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
     "express": "^4.13.4",
     "gcloud": "^0.31.0"
   }
