@@ -17,8 +17,8 @@ function insertEvent(properties, callback) {
     key: eventKey,
     data: {
       created: new Date().toJSON(),
-      _x: properties._y,
-      _y: properties._y,
+      _x: parseInt(properties._x),
+      _y: parseInt(properties._y),
       _type: properties._type
     }
   }, function(err) {
