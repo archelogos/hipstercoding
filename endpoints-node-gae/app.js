@@ -66,7 +66,8 @@ router.get('/api/event/insert', cors(corsOptions), function(req, res){
     if (err)
       return res.status(err.code).send(err);
 
-    res.json({ entity });
+  res.writeHead(200, {'Content-Type': 'image/gif' });
+  res.end(new Buffer('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64'), 'binary');
   });
 
 });

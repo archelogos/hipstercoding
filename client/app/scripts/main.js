@@ -52,7 +52,6 @@
 
       $('#dogs-num').html(dogsN+"%");
       $('#cats-num').html(catsN+"%");
-
     }
 
     $('section.cards #dog a').click(function(e){
